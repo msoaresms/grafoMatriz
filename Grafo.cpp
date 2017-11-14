@@ -10,7 +10,7 @@ void Grafo::inicializar() {
 
 void Grafo::inserirAresta(Vertex u, Vertex v, Weight w){
     mat[u][v] = w;
-    mat[v][w] = w;
+    mat[v][u] = w;
     m++;
 }
 
